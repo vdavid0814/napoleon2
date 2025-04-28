@@ -1,0 +1,157 @@
+.racs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(0.8rem, auto);
+    grid-template-areas:
+        "e e"
+        "c c"
+        "j m"
+        "l l";
+    gap: 0.8rem;
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+#elem1 {
+    grid-area: e;
+    padding-right: 1rem;
+    border-radius: 2rem;
+    height: 27rem;
+    background-color: #9DB2BF;
+}
+
+#elem1 img{
+    float: left;
+    height: 27rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    margin-left: -0.1rem;
+}
+
+
+#elem2 {
+    grid-area: c;
+    text-align: center;
+}
+
+
+
+#elem3 {
+    grid-area: j;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    background-color: #9DB2BF;
+
+
+}
+
+#elem3 img{
+    float: left;
+    height: 20rem;
+    margin-right: 1rem;
+    border-radius: 0.9rem;
+    margin-left: -0.2rem;
+}
+
+
+#elem4 {
+    grid-area: m;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    background-color: #9DB2BF;
+}
+
+
+#elem4 img{
+    float: left;
+    height: 20rem;
+    margin-right: 1rem;
+    border-radius: 0.9rem;
+    margin-left: -0.2rem;
+}
+
+#elem5 {
+    grid-area: l;
+    text-align: center;
+}
+
+body{
+    background-color: #DDE6ED;
+}
+
+
+@media screen and (max-width: 430px) {
+    .racs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(0.8rem, auto);
+        grid-template-areas:
+            "e e"
+            "c c"
+            "j j"
+            "m m"
+            "l l";
+        gap: 0.8rem;
+        margin: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    #elem1 {
+        grid-area: e;
+        border-radius: 2rem;
+        background-color: #9DB2BF;
+        height: fit-content;
+    }
+    
+    #elem1 img{
+        width: 105%;
+        border-radius: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    #elem2 {
+        grid-area: c;
+        text-align: center;
+        display: block;
+    }
+    
+    
+    
+    #elem3 {
+        grid-area: j;
+        border-radius: 1rem;
+        background-color: #9DB2BF;
+    
+    }
+    
+    #elem3 img{
+        width: 105%;
+        border-radius: 0.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    
+    #elem4 {
+        grid-area: m;
+        border-radius: 1rem;
+        background-color: #9DB2BF;
+    }
+    
+    
+    #elem4 img{
+        width: 105%;
+        border-radius: 0.9rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    p{
+        margin: 1rem;
+    }
+}

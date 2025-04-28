@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Napoleon memoriajatek</title>
+  <link rel="stylesheet" href="jatek.css">
+  <link rel="stylesheet" href="nyitolaplista.css">
+  <link rel="shortcut icon" href="OIP (1).jfif" type="image/x-icon">56
+</head>
+
+<body>
+
+  <header>
+    <ul id="menulista">
+      <li id="fooldal"><a href="index.html"><b>Főoldal</b></a></li>
+        <li><a href="elete.html">élete és szerelmi élete</a></li>
+        <li><a href="uralkodasa.html">uralkodása és öröksége</a></li>
+        <li><a href="csatai.html">csatái és szamüzetése</a></li>
+        <li><a href="teszt.html">teszt</a></li>
+    </ul>
+</header>
+
+  <main id="tartalom">
+    <div id="kezdo">
+      <h1>Napoleon memóriajáték</h1>
+      <p>írd be a neved:</p>
+      <input type="text" id="jatekos_nev" placeholder="Nev">
+      <br><br>
+      <button onclick="jatek_inditasa()">Indítás</button>
+    </div>
+
+    <div id="jatekter" style="display: none;">
+      <h2 id="udvozles"></h2>
+      <p>idő: <span id="ido">0</span> mp</p>
+      <div id="racs"></div>
+    </div>
+
+    <div id="vegeredmeny" style="display: none;">
+      <h2 id="uzenet"></h2>
+      <p>Osszido: <span id="vegido">0</span> mp</p>
+      <button onclick="location.reload()">újra</button>
+    </div>
+  </main>
+
+  <script src="jatek.js"></script>
+
+
+  <footer>készítette: Varga Dávid</footer>
+</body>
+
+</html>

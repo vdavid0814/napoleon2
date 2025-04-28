@@ -1,0 +1,113 @@
+body {
+    font-family: sans-serif;
+    background-color: #DDE6ED;
+    margin: 0;
+}
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  #menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #tartalom {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  input, button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  #racs {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .kartya {
+    width: 100px;
+    height: 100px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    user-select: none;
+  }
+  
+  .kiforditva {
+    background-color: #27ae60;
+  }
+
+  footer{
+    text-align: center;
+  }
+  
+
+  @media screen and (max-width: 430px) {
+
+  
+    #tartalom {
+      max-width: 430px;
+      margin: auto;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    input, button {
+      font-size: 16px;
+      padding: 10px;
+      margin: 5px;
+    }
+    
+    #racs {
+      display: grid;
+      grid-template-columns: repeat(4, 80px);
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .kartya {
+      width: 80px;
+      height: 80px;
+      background-color: #2980b9;
+      color: white;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 8px;
+      user-select: none;
+    }
+
+    footer{
+      text-align: center;
+    }
+    
+  }

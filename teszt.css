@@ -1,0 +1,83 @@
+body {
+    background-color: #DDE6ED;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  input, button, select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
+  }
+  
+  select {
+    width: 15rem;
+  }
+  
+  
+  .kerdes {
+    background-color: #9DB2BF;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  
+  .valaszok {
+    display: inline-block;
+    text-align: left;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    
+  }
+  
+  button {
+    background-color: #9DB2BF;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #DDE6ED;
+  }
+  
+  #vegeredmeny {
+    display: none;
+    margin: 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #9DB2BF;
+  }
+  
+  #kerdesek {
+    display: none;
+    font-size: 1.4rem;
+  }
+  
+  #helyes_valaszok {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    width: 50rem;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+
+
+
+  @media screen and (max-width: 430px) {
+
+    body {
+      width: 30rem;
+    }
+
+  }

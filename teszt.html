@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nyitolaplista.css">
+    <link rel="stylesheet" href="teszt.css">
+    <link rel="shortcut icon" href="OIP (1).jfif" type="image/x-icon">
+    <title>Napoleon teszt</title>
+</head>
+
+<body>
+    <header>
+        <ul id="menulista">
+            <li id="fooldal"><a href="index.html"><b>Főoldal</b></a></li>
+            <li><a href="elete.html">élete és szerelmi élete</a></li>
+            <li><a href="uralkodasa.html">uralkodása és öröksége</a></li>
+            <li><a href="csatai.html">csatái és száműzetése</a></li>
+            <li><a href="jatek.html">játék</a></li>
+        </ul>
+    </header>
+
+    <div class="kerdes-doboz">
+        <div id="kezdo">
+            <h1>Napoleon teszt</h1>
+            <p>írd be a neved:</p>
+            <input type="text" id="jatekos_nev" placeholder="Nev">
+            <br><br>
+            <button onclick="teszt_inditasa()">Indítás</button>
+        </div>
+
+        <div id="kerdesek" style="display: none;">
+            <h2 id="udvozles"></h2>
+            
+            <form id="teszt_urlap">
+                <div class="kerdes">
+                    <label for="szuletesi_ev">1. Mikor született Napoleon Bonaparte?</label><br>
+                    <select id="szuletesi_ev" name="szuletesi_ev">
+                        <option value="">Válassz</option>
+                        <option value="1769">1769</option>
+                        <option value="1789">1789</option>
+                        <option value="1804">1804</option>
+                        <option value="1755">1755</option>
+                    </select>
+                </div>
+
+                <div class="kerdes">
+                    <p>2. Melyik csata volt Napoleon végső veresége?</p>
+                    <div class="valaszok">
+                        <div><input type="radio" id="csata1" name="csata" value="Austerlitz"> <label for="csata1">Austerlitz</label></div>
+                        <div><input type="radio" id="csata2" name="csata" value="Borogyino"> <label for="csata2">Borogyino</label></div>
+                        <div><input type="radio" id="csata3" name="csata" value="Waterloo"> <label for="csata3">Waterloo</label></div>
+                        <div><input type="radio" id="csata4" name="csata" value="Leipzig"> <label for="csata4">Leipzig</label></div>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <p>3. Jelöld meg az igaz állításokat!</p>
+                    <div class="valaszok">
+                        <div><input type="checkbox" id="allitas1" name="allitas1"> <label for="allitas1">Napoleont kétszer száműzték.</label></div>
+                        <div><input type="checkbox" id="allitas2" name="allitas2"> <label for="allitas2">A Napoleon-kódex megszüntette a feudalizmust.</label></div>
+                        <div><input type="checkbox" id="allitas3" name="allitas3"> <label for="allitas3">Napoleont Moszkvában győzték le.</label></div>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label for="fontos_csata">4. Melyik volt Napoleon egyik legfontosabb győzelme?</label><br>
+                    <input type="text" id="fontos_csata" name="fontos_csata" placeholder="Írd be a csata nevét">
+                </div>
+
+                <div class="kerdes">
+                    <p>5. Napoleon halálának helyszíne:</p>
+                    <div class="valaszok">
+                        <div><input type="radio" id="halalhelyszin1" name="halalhelyszin" value="Szent Ilona"> <label for="halalhelyszin1">Szent Ilona</label></div>
+                        <div><input type="radio" id="halalhelyszin2" name="halalhelyszin" value="Elba"> <label for="halalhelyszin2">Elba</label></div>
+                        <div><input type="radio" id="halalhelyszin3" name="halalhelyszin" value="Párizs"> <label for="halalhelyszin3">Párizs</label></div>
+                        <div><input type="radio" id="halalhelyszin4" name="halalhelyszin" value="Korzika"> <label for="halalhelyszin4">Korzika</label></div>
+                    </div>
+                </div>
+
+                <button type="button" onclick="teszt_ellenorzes()">Ellenőrzés</button>
+            </form>
+        </div>
+
+        <div id="vegeredmeny" style="display: none;">
+            <h2 id="uzenet"></h2>
+            <p>Pontszám: <span id="pontszam">0</span> / 5</p>
+            <button onclick="location.reload()">Újra</button>
+            <div id="elem4">
+                <footer>Készítette: Varga Dávid</footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="teszt.js"></script>
+</body>
+
+</html>
